@@ -1,0 +1,383 @@
+/*Custom font is added here*/
+@font-face {
+    font-family: fontOne;
+    src: url(../customfont/Agbalumo-Regular.ttf);
+    font-weight: 500;
+}
+body {
+    font-family: fontOne;
+    margin: 0;
+    padding: 0;
+}
+/*css styling for the header*/
+header {
+    background-color: #f68c1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/*logo of the candy*/
+#logo img {
+    width: 140px; 
+}
+
+#header-content {
+    display: flex; 
+    align-items: center;
+}
+
+#header-content p {
+    margin: 0 10px; 
+}
+/*nav menu*/
+nav {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555; 
+}
+
+.search-bar input[type="text"]::placeholder {
+    font-weight: bold;
+    color: black;
+}
+#content {
+    margin: 0 auto;
+    padding: 20px;
+}
+/*css styling for image*/
+.imagee {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.imagee::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/text.png); /*url of the image is added*/
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+.imagee img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+#special-promotion {
+    margin: 1px 0;
+    background-color: #ADD8E6;
+}
+
+#special-promotion .promotion-banner {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#special-promotion .promotion-banner img {
+    width: 40%;
+    height: auto;
+    display: block;
+    border-radius: 10px 0 0 10px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+#special-promotion .promotion-banner:hover img {
+    transform: scale(1.1); 
+}
+
+
+#special-promotion .promotion-details {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#special-promotion .promotion-details p {
+    font-family: "Luckiest Guy";
+    margin-top: 182px;
+    font-size: 59px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.box-1{
+    display: flex;
+    justify-content: center;
+    height: 7%;
+}
+.button2 {
+    color: white;
+    transition: all 0.3s;
+    position: relative;
+    width: 20%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button2 span {
+    transition: all 0.3s;
+  }
+  .button2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: red;
+    border-bottom-color:red;
+    transform: scale(0.1, 1);
+  }
+  .button2:hover span {
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: red;
+  }
+  .button2:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .button2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .button2:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+  article{
+    display: flex;
+  }
+  .head{
+    margin-left: 3em;
+    margin-top: 2em;
+    font-size: 50px;
+    transition: transform 0.5s ease; 
+}
+.imagee2{
+    width: 50%;
+}
+.what{
+    background-color: #F5F5DC;
+    width: 50%;
+}
+.head:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+#content > article:nth-child(3) > div.what > ul > li:nth-child(1), #content > article:nth-child(3) > div.what > ul >li:nth-child(2),
+#content > article:nth-child(3) > div.what > ul > li:nth-child(3) {
+    transition: transform 0.5s ease; /* Smooth transition for wiggle effect */
+    padding: 43px;
+    font-size: 27px;
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+.what > ul > li {
+   transition:  transform 0.5s ease;
+}
+.what > ul > li:hover {
+    transform: rotate(5deg) translateX(5px); 
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+h2{
+  font-family: "Luckiest Guy";
+  color: #f68c1e;
+}
+.imagee3 {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url(../images/TwiixUS_AllProducts_header.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+}
+
+.imagee3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.pop{
+    margin-left: 470px;
+    font-size: 39px;
+    color: aliceblue;
+    font-family: "Luckiest Guy";
+}
+.para{
+    margin-left: 613px;
+    font-size: 28px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 25px;
+}
+/*css styling for the form*/
+form {
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Playfair Display";
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+button {
+    background-color: #f68c1e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #d9740a;
+}
+footer {
+    background-color: #f68c1e;
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+#logoo {
+    width: 100px; 
+    height: auto;
+}
+#footer-links > ul > li:nth-child(1), 
+li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5), li:nth-child(6){
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+#footer-links > ul > li:nth-child(1) > a, li:nth-child(2) > a, li:nth-child(3) > a,li:nth-child(4) > a,li:nth-child(5) > a, li:nth-child(6) > a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#footer-links > ul > li:nth-child(1) > a:hover, li:nth-child(2) > a:hover,
+ li:nth-child(3) > a:hover,li:nth-child(4) > a:hover,li:nth-child(5) > a:hover, li:nth-child(6) > a:hover{
+    background-color: #555;
+}
+
+#first {
+    grid-column: 1; 
+}
+/*css styling for the footer*/
+#footer-links {
+    grid-column: 2; 
+}
+
+#contact-form {
+    grid-column: 3; 
+}
+#social-media img{
+    width: 50%;
+}
+#footer-links ul {
+    padding: 0;
+    list-style-type: none;
+}
+#contact-form > h3{
+    font-family: "Playfair Display";
+}
+.buttonCont1 .button{
+    color: #f8f8f8;
+    font-weight: 400;
+    line-height: 45px;
+    margin: auto;
+    max-width: 0px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+  }
+  .buttonCont1 .button1{
+    font-weight: 100;
+  }
+  .buttonCont1 .button1 svg{
+    height: 45px;
+    width: 200px;
+    position: absolute;
+    left: -62px;
+  }
+  .buttonCont1 .button1 rect{
+    fill: none;
+    stroke: #f8f8f8;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  .buttonCont1 .button1:hover{
+    background: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .buttonCont1 .button1:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+  }
+  #contact-form > form > div{
+    margin-left: 172px;
+  }
+  #follow > p{
+    font-family: "Luckiest Guy"; /* font to the text is added*/
+    font-size: 34px;
+    color: red;
+  }
